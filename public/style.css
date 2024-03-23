@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: black;
+}
+.container {
+    width: 400px;
+    height: 100vh;
+    background-color: #0e0d20;
+    margin: 0 auto;
+    padding: 2vmin;
+}
+
+.container .quiz-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0 2px;
+}
+.container .quiz-wrapper .heading h1 {
+    color: #88AB8E;
+    text-align: center;
+    letter-spacing: 1px;
+}
+.container .quiz-wrapper .ques-count h3{
+    color: rgba(255, 255, 255, 0.644);
+    font-weight: 300;
+    text-align: center;
+
+}
+.container .quiz-wrapper .line {
+    width: 100%;
+    height: 10px;
+    border-top: 1px solid rgb(131, 131, 131);
+    border-top-style: dashed;
+}
+.container .quiz-wrapper .question-contain {
+    width: 100%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 10px;
+    border-radius: 20px;
+
+}
+.container .quiz-wrapper .question h4{
+    font-size: 1.1em;
+}
+.container .quiz-wrapper .question-contain .option {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+.container .quiz-wrapper .question-contain .option div {
+    
+    border:1px solid rgb(63, 62, 62) ;
+    width: 100%;
+    height: 50px;
+    border-radius: 10px;
+}
+.container .quiz-wrapper .question-contain .option div:hover{
+    border:1px solid rgb(100, 233, 22) ;
+    border-radius: 12px;
+
+}
+.container .quiz-wrapper .question-contain .option div button {
+    width: 100%;
+    height: 100%;
+    text-transform: capitalize;
+    font-size: 1.1em;
+    font-weight: 300;    
+    background: none;
+    border: none;
+    color: rgb(63, 62, 62);
+    text-align: left;
+    padding: 0 15px;
+    cursor: pointer;
+
+} 
+.container .quiz-wrapper .question-contain .option div button:hover{
+    color: #1109ad;
+}
+.container .quiz-wrapper .btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.container .quiz-wrapper .btn button{
+    width: 35%;
+    height: 35px;
+    border-radius: 8px;
+    border: none;
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 1.2em;
+    cursor: pointer;
+    border:2px solid #5c163a;
+    background: none;
+    color: white;
+    transition: .2s ease;
+}
+.container .quiz-wrapper .btn button:hover{
+    background-color: #7E2553;
+    border: none;
+}
+.container .quiz-wrapper .result {
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+    display: none;
+    font-weight: 500;
+
+}
+
+@media (max-width:750px){
+    .container{
+        width: 100%;
+    }
+}
+
